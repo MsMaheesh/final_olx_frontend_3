@@ -33,7 +33,7 @@ function Footer() {
             <div className='footeritemlisttext' onClick={()=>setDetails({...Details,item:'Phone'})}>Mobiles</div>
             <div className='footeritemlisttext' onClick={()=>setDetails({...Details,item:'Fashion'})}>Fashion</div>
             <div className='footeritemlisttext' onClick={()=>setDetails({...Details,item:'Tv'})}>Electronics & Applications</div>
-            <div className='footeritemlisttext' onClick={()=>setDetails({...Details,item:'Biks'})}>Bikes</div>
+            <div className='footeritemlisttext' onClick={()=>setDetails({...Details,item:'Bike'})}>Bikes</div>
           </div>
         </div>
 
