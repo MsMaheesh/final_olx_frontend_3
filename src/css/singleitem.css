@@ -1,0 +1,148 @@
+.singleitemsection {
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.image-section {
+    width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.details-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.item-price {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.item-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.seller-details {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.seller-details h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.seller-details p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.call-button,
+.chat-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.call-button:hover,
+.chat-button:hover {
+    background-color: #0056b3;
+}
+
+.singlespinner {
+    /* border: 16px solid #f3f3f3; */
+    border-top: 6px solid darkkhaki;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .singleloading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .item-container {
+        flex-direction: row;
+    }
+
+    .details-section {
+        flex: 1;
+    }
+   
+      
+}
+
+@media (max-width: 767px) {
+    .item-container {
+        flex-direction: column;
+    }
+
+    .details-section {
+        width: 100%;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+    .spinner {
+       
+        width: 40px;
+        height: 40px;
+      }
+      
+}

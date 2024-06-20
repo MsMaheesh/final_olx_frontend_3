@@ -1,0 +1,135 @@
+.personitemsection {
+  margin-top: 70px;
+  padding: 30px;
+}
+
+.noitem {
+  text-align: center;
+  font-size: 2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.personitem-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.personitem-table th,
+.personitem-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.personitem-table th {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.personitem-table td {
+  text-align: center;
+}
+
+.personitem-table img {
+  width: 100px;
+  height: auto;
+}
+
+.personitemdelet-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.personitemdelet-btn:hover {
+  background-color: #ff1a1a;
+}
+
+.personnoitem {
+  text-align: center;
+  font-size: 20px;
+  color: #888;
+}
+
+.personspinner {
+  /* border: 16px solid #f3f3f3; */
+  border-top: 6px solid darkkhaki;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.personloading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .personitemsection {
+    padding: 15px;
+  }
+
+  .noitem {
+    font-size: 1.5rem;
+  }
+
+  .personitem-table {
+    font-size: 16px;
+  }
+
+  .personitem-table img {
+    width: 80px;
+  }
+
+  .personitemdelet-btn {
+    padding: 6px 10px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .personitemsection {
+    padding: 10px;
+  }
+
+  .noitem {
+    margin-top: 50px;
+    font-size: 1.2rem;
+  }
+
+  .personitem-table {
+    font-size: 14px;
+  }
+
+  .personitem-table th,
+  .personitem-table td {
+    padding: 8px;
+  }
+
+  .personitem-table img {
+    width: 60px;
+  }
+
+  .personitemdelet-btn {
+    padding: 4px 8px;
+  }
+}

@@ -1,0 +1,183 @@
+.section{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    width: 600px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background: #fff;
+    gap: 30px;
+    margin-bottom: 10px;
+   
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  
+    
+}
+.header .text{
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    color: blue;
+    text-transform: capitalize;
+
+}
+.text::after{
+    content: '';
+    height: 3px;
+    width: 50%;
+    position: absolute;
+    top:125%;
+    right:0;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    animation: signup 4s infinite;
+}
+@keyframes signup {
+    0%   {background-color:red; left:50%; top:125%;}
+    25%  {background-color:red; left:0%; top:125%;}
+    50%  {background-color:blue; left:50%; top:125%;}
+    75%  {background-color:blue; left:100%; top:125%;}
+    100% {background-color:red; left:50%; top:125%;}
+}
+.inputs{
+    margin-top:20px;
+    width: 500px;
+}
+.input:focus{
+    border: #0056b3;
+}
+.input{
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    border-radius: 6px;
+    margin-top: 10px;
+
+}
+.input .logo{
+    margin: 0px 20px;
+}
+.input input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #007BFF;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: #0056b3;
+}
+.sub-container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub{
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #007BFF;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blue{
+    background-color: #fff;
+    color: #555;;
+}
+.active{
+    display: block;
+}
+.inactive{
+    display: none;
+}
+.loader-overlay {
+position: absolute;
+top: 50%;
+filter: blur(10);
+z-index: 40;
+
+}
+.signspinner {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-left-color: darkkhaki;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+@media (max-width:760px){
+    .section{
+        width: 95%;
+    }
+    .header .text{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .inputs{
+        width: 310px;
+    }
+    .input{
+        height: 40px;
+        border-radius: 5px;
+    }
+    .input .logo{
+        margin: 0px 15px;
+    }
+    .input input{
+        font-size: 15px;
+    }
+    .btn{
+        width: 90px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .sub{
+        width: 90px;
+        height: 35px;
+        font-size: 18px;
+        
+    }
+
+    
+} 

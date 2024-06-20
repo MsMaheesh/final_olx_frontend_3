@@ -1,0 +1,167 @@
+.footercontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(0 47 52);
+    z-index: 1;
+    margin-top: 45vh;
+}
+ .footeritems{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    
+}
+.footeritemlists{
+    display: flex;
+   flex-direction: column;
+}
+
+.footeritem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    margin: 0px 10px;
+    
+}
+.footeritemlogo{
+    cursor: pointer;
+    color: darkkhaki;
+}
+/* .footeritemlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+
+} */
+
+.footeritemlisttext{
+    text-align: center;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: darkkhaki;
+    cursor: pointer;
+}
+.footeritemlisttext:hover{
+    font-size: 16px;
+   
+}
+.footeritemicon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.footericons{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: darkkhaki;
+    gap: 10px;
+
+}
+.footericon {
+    font-size: 20px;
+    cursor: pointer;
+    color: darkkhaki;
+  }
+  
+  .footericon:hover {
+    color: #000;
+  }
+
+.footeritemtext{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    /* background-color: blue; */
+}
+
+.footerlogoopen{
+    display: block;
+}
+.footerlogoclose{
+    display: none;
+}
+.footerbottom{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerbottomtext{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:760px) {
+    .footercontainer{
+        gap: 5px;
+        margin-top: 34vh;
+    }
+     .footeritems{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-top: 10px;   
+    }
+    
+    .footeritemlists{
+        display: flex;
+       flex-direction: column;
+    }
+    
+    
+    .footeritemlisttext{
+        text-align: left;
+        font-size: 12px;
+        margin: 5px 15px;
+    }
+    .footeritemicon{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        margin: 0px 10px; 
+        
+    }
+    .footericons{
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    .footericon {
+        font-size: 15px;
+        cursor: pointer;
+        color: darkkhaki;
+      }
+    
+    .footeritemtext{
+        font-size: 15px;
+        font-weight: 400;
+        /* background-color: blue; */
+    }
+    
+    .footerbottom{
+        margin-top: 15px;
+    }
+    .footerbottomtext{
+        font-size: 15px;
+    }
+
+    
+}

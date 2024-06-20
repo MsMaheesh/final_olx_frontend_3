@@ -1,0 +1,406 @@
+.navcontainer1{
+    display: none;
+}
+.navcontainer{
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: rgba(255, 255,255,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    z-index: 30;
+   
+}
+.navlogo{
+    margin: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgba(0 47 52);
+}
+.navlocationcontainer{
+    border: 2px solid black;
+    margin: 10px;
+    width: 300px;
+
+}
+.navlocation{
+    display: flex;
+    gap: 10px;
+  justify-content: center;
+  align-items: center;  
+}
+.navlocationlogo{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+.navlocationlogo:hover{
+    color: rgb(42, 165, 134);
+
+}
+.navlocationinput{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+   
+}
+.navsearchcontainer{
+    border: 2px solid black;
+    margin: 10px;
+    width: 700px;
+}
+.navsearch{
+    display: flex;
+    gap: 10px;
+   justify-content: center;
+   align-items: center;  
+}
+.navsearchlogo{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+.navsearchlogo:hover{
+    color: rgb(42, 165, 134);
+
+}
+.navsearchinput{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+   
+}
+.navenglish{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.navenglishtext{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.navemglishlogo{
+    font-size: 20px;
+}
+
+.navprofile{
+    margin: 10px;
+    cursor: pointer;
+}
+.navprofilelogo{
+    width: 30px;
+    height: 30px;
+    transition: all 1s;
+}
+.navprofilelogo:hover{
+    color: blue;
+}
+.navsellbtncontainer{
+    margin: 10px;
+    background-color: blue;
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.sellbtn{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 22px;
+    border-radius: 30px;
+    width: 70px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+.menuxmark{
+    display: none;
+}
+.menu{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: black;
+    width: 200px;
+    position: absolute;
+    top:70px;
+    right:50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: menu 2s ;
+    z-index: 1000;
+}
+.personName{
+    color: red;
+}
+.menu .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+
+}
+.items .item{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.items .item .icon,h1,.item1 {
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@keyframes menu {
+    0%{transform: translateY(-10px);}
+    100%{transform: translateY(0);}
+}
+.close{
+    display: none;
+}
+
+
+/* Tablet-specific styles */
+@media screen and (max-width: 1024px) {
+    .navcontainer {
+        padding: 0 5px; /* Adjusted padding */
+    }
+
+    .navlogo {
+        font-size: 30px; /* Adjusted font size */
+        margin: 5px 10px; /* Adjusted margin */
+    }
+
+    
+    .navlocationcontainer, .navsearchcontainer {
+        width: auto; /* Adjusted width */
+    }
+
+    .navenglish {
+        justify-content: flex-start; /* Adjusted alignment */
+    }
+
+    .navsellbtncontainer {
+        width: 70px; /* Adjusted width */
+        height: 30px; /* Adjusted height */
+    }
+
+    .sellbtn {
+        font-size: 18px; /* Adjusted font size */
+        width: 60px; /* Adjusted width */
+    }
+
+    .navlocationlogo, .navsearchlogo {
+        width: 15px;
+        height: 15px;
+        padding: 3px;
+    }
+
+    .navlocationinput, .navsearchinput {
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .navenglishtext {
+        font-size: 18px; /* Adjusted font size */
+    }
+
+    .navprofilelogo {
+        width: 25px; /* Adjusted width */
+        height: 25px; /* Adjusted height */
+    }
+}
+
+
+/* Mobile Styles */
+@media (max-width:760px) {
+    .navcontainer{
+        display: none;
+    }
+    .navcontainer1{
+        position: fixed;
+        top: 0; 
+        z-index: 3;
+        display: block;
+        width: 100%;
+        border: 1px solid white;
+    border-radius: 3px;
+    background-color:rgba(255, 255,255,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    .topnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .navlogo1{
+        margin: 10px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .navlocationcontainer1{
+        border: 2px solid black;
+        margin: 10px;
+        width: 100%;;
+    
+    }
+    .navlocation1{
+        display: flex;
+        gap: 10px;
+      justify-content: center;
+      align-items: center;  
+    }
+    .navlocationlogo1{
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        color: #fff;
+        padding: 5px;
+    }
+    .navlocationinput1{
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        text-transform: capitalize;
+    }
+    .navprofile1{
+        margin: 10px;
+    }
+    .navprofilelogo1{
+        width: 20px;
+        height: 20px;
+    }
+    .navsearchcontainer1{
+        border: 2px solid black;
+        margin: 0 5px 10px 10px;
+    }
+    .navsearch1{
+        display: flex;
+        gap: 10px;
+       justify-content: flex-start;
+       align-items: center;  
+    }
+    .navsearchlogo1{
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        color: #fff;
+        padding: 5px;
+    }
+    .navsearchinput1{
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        text-transform: capitalize;
+    
+    }
+    .menuxmark{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 25px;
+        cursor: pointer;
+        animation: menu1 0.3s ;
+
+    }
+    
+     .menu{
+        background-color:rgba(255, 255,255,1);
+        color: black;
+        width: 100%;
+        height:100%;
+        position: absolute;
+        top:0px;
+        right:0px;
+        border-radius: 0;
+        animation: menu 2s ;
+        padding: 20px;
+        z-index: 10;
+
+    }
+    
+    .menu .items{
+        display: flex;
+        align-items: flex-start;
+        margin: 10px ;
+        gap: 30px;
+    
+    }
+    
+    .items .item{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        list-style: none;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 700;
+       
+       
+    }
+    .item1{
+        text-transform: capitalize;
+        color: lightsteelblue;
+        font-size: 24px;
+    }
+    
+    .items .item .icon,h1, .item1 {
+        display: block;
+    }
+    
+    h1{
+        padding-left: 10px;
+        text-transform: capitalize;
+    }
+    
+    .user-icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border: 2px solid black;
+        padding: 15px;
+        color: black;
+        font-size: 30px;
+
+    } 
+    @keyframes menu {
+        0%{transform: translateY(-100%);}
+        100%{transform: translateY(0);}
+    }
+
+    
+}
